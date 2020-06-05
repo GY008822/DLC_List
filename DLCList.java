@@ -71,19 +71,18 @@ public class DLCList<E> implements List<E>
     public E get(int index)
     {
       
-       for(int i = 0; i < size; i++)
+       for(int i = 0; i < index; i++)
       {
-         while(i != index)
-           {
-              Node nextNode = start.getNext();             
-              System.out.println(nextNode);
-              if(i == index)
-              {
-                 return (E) nextNode.getData(); 
-              }
-           }
+         start.getNext();
+         int placement = 0;
+         placement = placement + 1;
+         if(index == placement)
+         {
+            return (E) start.getNext().getData();
+         }
+         
         }
-      return null; 
+      return (E) start.getData(); 
     }
     
     public E getFirst()

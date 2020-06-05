@@ -27,9 +27,11 @@ public class DLCLDriver
        // System.out.println(list.getLast().getID());
        // //System.out.println("Index 1: " + list.get(1));
        
-       var p1 = new Person("Walter", "White", "99999999");
-       list.addLast(p1);
-       System.out.println(list.getLast());
+       //var p1 = new Person("Walter", "White", "99999999");
+       //list.addLast(p1);
+       //System.out.println(list.getLast());
        System.out.println(list.get(0));
+       System.out.println(list.get(1));
+       System.out.println(list.get(2));
     }
 }
